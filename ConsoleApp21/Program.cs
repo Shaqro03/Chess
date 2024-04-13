@@ -198,7 +198,7 @@ namespace ConsoleApp21;
         {
             case Figure.K:
                
-               if((coord.xCoord >= x1 - 1 && coord.xCoord <= x1 + 1 && coord.yCoord >= y1 - 1 && coord.yCoord <= y1 + 1)&&(coord.xCoord != x1 )&&(coord.yCoord != y1))
+               if(coord.xCoord >= x1 - 1 && coord.xCoord <= x1 + 1 && coord.yCoord >= y1 - 1 && coord.yCoord <= y1 + 1)
                 {
                     coord.xCoord = x1;
                     coord.yCoord = y1;
@@ -208,7 +208,7 @@ namespace ConsoleApp21;
                 WriteLine("next step is not correct");
                 return false;
             case Figure.R: 
-                if ((coord.xCoord == x1 || coord.yCoord == y1) && (coord.xCoord != x1) && (coord.yCoord != y1))
+                if (coord.xCoord == x1 || coord.yCoord == y1) 
                 {
                     coord.xCoord = x1;
                     coord.yCoord = y1;
@@ -217,7 +217,7 @@ namespace ConsoleApp21;
                 WriteLine("next step is not correct");
                 return false;
             case Figure.B:
-                if ((Math.Abs(x1-coord.xCoord)==Math.Abs(y1-coord.yCoord) && (coord.xCoord != x1) && (coord.yCoord != y1)))
+                if (Math.Abs(x1-coord.xCoord)==Math.Abs(y1-coord.yCoord) 
                 {
                     coord.xCoord = x1;  
                     coord.yCoord = y1;
@@ -226,7 +226,7 @@ namespace ConsoleApp21;
                 WriteLine("next step is not correct");
                 return false;
             case Figure.Q:
-                if (((coord.xCoord == x1 || coord.yCoord == y1) || Math.Abs(x1 - coord.xCoord) == Math.Abs(y1 - coord.yCoord)) && (coord.xCoord != x1) && (coord.yCoord != y1))
+                if ((coord.xCoord == x1 || coord.yCoord == y1) || Math.Abs(x1 - coord.xCoord) == Math.Abs(y1 - coord.yCoord))
                 {
                     coord.xCoord = x1;
                     coord.yCoord = y1;
@@ -238,7 +238,7 @@ namespace ConsoleApp21;
                 case Figure.N:
                 if ((x1 == coord.xCoord + 2 && y1 == coord.yCoord + 1) || (x1==coord.xCoord + 1 && y1 == coord.yCoord + 2)||(x1 == coord.xCoord - 1 && y1 == coord.yCoord + 2)||
                     (x1 == coord.xCoord -2 && y1 == coord.yCoord + 1)||(x1 == coord.xCoord -2 && y1 == coord.yCoord -1)||(x1 == coord.xCoord - 1 && y1 == coord.yCoord - 2)||
-                    (x1 == coord.xCoord + 1 && y1 == coord.yCoord - 2)||(x1 == coord.xCoord - 2 && y1 == coord.yCoord - 1) && (coord.xCoord != x1) && (coord.yCoord != y1))
+                    (x1 == coord.xCoord + 1 && y1 == coord.yCoord - 2)||(x1 == coord.xCoord - 2 && y1 == coord.yCoord - 1) )
                 {
                     coord.xCoord = x1;
                     coord.yCoord = y1;

@@ -42,7 +42,7 @@ namespace ConsoleApp21;
         //    WriteLine("Writh a number position (1-8)");
         //  //  y = int.Parse(ReadLine());
         //  bool isInt = int.TryParse(ReadLine(), out y);
-        //    if (y >= 0 && y <= 8)
+        //    if (y > 0 && y <= 8)
         //    {
         //        WriteLine("correct position " + y);
         //        break;
@@ -217,7 +217,7 @@ namespace ConsoleApp21;
                 WriteLine("next step is not correct");
                 return false;
             case Figure.B:
-                if (Math.Abs(x1-coord.xCoord)==Math.Abs(y1-coord.yCoord) 
+                if (Math.Abs(x1-coord.xCoord)==Math.Abs(y1-coord.yCoord))
                 {
                     coord.xCoord = x1;  
                     coord.yCoord = y1;
